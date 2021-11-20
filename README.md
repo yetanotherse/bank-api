@@ -56,15 +56,30 @@ Below are sample datasets for `customer`, `account` and `transaction` collection
 ## API
 API is built using Node and Express and deployed on Heroku cloud. Link for the API is [Base API Endpoint](https://revbank-api.herokuapp.com/api/)
 
+API documentation can be found in the section below. Here is a list of endpoints for quick reference.
+
+```
+https://revbank-api.herokuapp.com/api/customers/ [GET]
+https://revbank-api.herokuapp.com/api/customers/:id [GET]
+https://revbank-api.herokuapp.com/api/accounts/:id/balance [GET]
+https://revbank-api.herokuapp.com/api/accounts/:id/transactions [GET]
+https://revbank-api.herokuapp.com/api/accounts [POST]
+https://revbank-api.herokuapp.com/api/accounts/transfer [POST]
+https://revbank-api.herokuapp.com/api/transactions/:id [GET]
+```
+
 ## API Docs
-API documentation can be found under `docs` directory. 
+API documentation can be found under `docs` directory. Also available at [https://yetanotherse.github.io/bank-api/](https://yetanotherse.github.io/bank-api/).
+
+*Note* If you do not see any API docs then select the version as `0.1.0` from the top right of page.
 
 ## Test Suite/Jest
 Tests have beeb written for API endpoints testing using `Jest`. Tests are available under `src/tests` directory and can be run using `yarn test` or `npm run test`. They connect to a secondary test database which is also hosted on Atlas cloud.
 
 ## Data for Testing API
-Since there is no use case for creation of new customers, tests have to be done using existing customers data. Database has 100 demo customers. For testing purpose, IDs of 10 customers are provided below (for creation of new accounts and other API tests as needed).
+Some existing records are mentioned below for quick testing. Further, since there is no use case for creation of new customers, tests have to be done using existing customers data. Database has 100 demo customers. For testing purpose, IDs of 10 customers are provided below (for creation of new accounts and other API tests as needed).
 
+**Customers**
 ```
 61989f22241b9ce0ae60044d
 61989f22241b9ce0ae60044e
@@ -76,4 +91,18 @@ Since there is no use case for creation of new customers, tests have to be done 
 61989f22241b9ce0ae600454
 61989f22241b9ce0ae600455
 61989f22241b9ce0ae600456
+```
+
+**Account**
+```
+6198a4fd801054bf6a9e9c87
+6198d85c0dd770f8c0a1e39f
+```
+
+**Transactions**
+```
+6198a500801054bf6a9e9c8a
+6198d85d0dd770f8c0a1e3a2
+6198d8b10dd770f8c0a1e3ac
+6198d8b20dd770f8c0a1e3b1
 ```
