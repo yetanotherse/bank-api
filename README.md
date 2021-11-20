@@ -54,7 +54,7 @@ Below are sample datasets for `customer`, `account` and `transaction` collection
 ```
 
 ## API
-API is built using Node and Express and deployed on Heroku cloud. Link for the API is [API Endpoint](https://pages.github.com/)
+API is built using Node and Express and deployed on Heroku cloud. Link for the API is [Base API Endpoint](https://revbank-api.herokuapp.com/)
 
 ## API Docs
 API documentation can be found under `apidocs` directory.
