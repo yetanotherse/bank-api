@@ -24,6 +24,7 @@
         "url" : "https://api.github.com/v1"
     },
     "scripts": {
+        "start": "node ./src/index.js",
         "test": "jest"
     }
 }
