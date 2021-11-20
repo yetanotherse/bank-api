@@ -54,10 +54,10 @@ Below are sample datasets for `customer`, `account` and `transaction` collection
 ```
 
 ## API
-API is built using Node and Express and deployed on Heroku cloud. Link for the API is [Base API Endpoint](https://revbank-api.herokuapp.com/)
+API is built using Node and Express and deployed on Heroku cloud. Link for the API is [Base API Endpoint](https://revbank-api.herokuapp.com/api/)
 
 ## API Docs
-API documentation can be found under `apidocs` directory.
+API documentation can be found under `docs` directory. 
 
 ## Test Suite/Jest
 Tests have beeb written for API endpoints testing using `Jest`. Tests are available under `src/tests` directory and can be run using `yarn test` or `npm run test`. They connect to a secondary test database which is also hosted on Atlas cloud.
